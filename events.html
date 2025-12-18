@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Day 2026 | Events</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo" style="text-decoration: none; cursor: pointer;">ENERGY DAY '26</a>
+        <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="competitions.html">Competitions</a></li>
+            <li class="dropdown">
+                <a href="#">Past Highlights ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="highlights-2025.html">2025</a></li>
+                    <li><a href="highlights-2024.html">2024</a></li>
+                </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="register.html" class="btn">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section style="background: linear-gradient(180deg, rgba(6,12,20,0.22) 0%, rgba(6,12,20,0.12) 60%), radial-gradient(circle at 50% 18%, rgba(16,185,129,0.03), transparent 35%), url('assets/images/banner-energyday.svg'); background-size: cover, cover, cover; background-position: center, center, center; background-blend-mode: normal, normal, normal; padding: 70px 8%; text-align: center; color: white;">
+        <h1 style="font-size: 3rem; margin-bottom: 15px; font-weight: 700;">Energy Day 2026 Events</h1>
+        <p style="font-size: 1.1rem; opacity: 0.95;">Discover the full lineup of sessions, workshops, and networking opportunities</p>
+    </section>
+
+    <!-- EVENTS GRID WITH HOVER POPUPS -->
+    <section>
+        <h2 class="section-title">Featured Events</h2>
+        <p style="text-align: center; color: #8B95A5; max-width: 900px; margin: 0 auto 60px; font-size: 1.05rem;">
+            Hover over each event to discover what awaits. Click to register and secure your spot.
+        </p>
+
+        <div class="grid-container" style="max-width: 1200px; margin: 0 auto;">
+            <!-- Event 1: Keynote -->
+            <div class="card event-card" style="position: relative; overflow: hidden; min-height: 280px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; cursor: pointer;" data-aos="fade-up">
+                <div style="position: relative; z-index: 1;">
+                    <i class="fas fa-microphone" style="font-size: 3rem; color: #2ECC9C; margin-bottom: 15px; display: block;"></i>
+                    <h3 style="font-size: 1.3rem; color: white; margin-bottom: 10px;">Keynote Session</h3>
+                </div>
+                <div class="event-popup">
+                    <strong>Green Energy Transitions</strong><br>Industry insights & future outlook
+                </div>
+                <a href="register.html" style="position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); opacity: 0; transition: all 0.3s ease; white-space: nowrap; padding: 10px 20px; background: #2ECC9C; color: white; border-radius: 50px; font-weight: 600; z-index: 10;" onclick="event.stopPropagation();">Register Now</a>
+                <script>
+                    (function() {
+                        const card = event.currentTarget.closest('.event-card') || document.currentScript.closest('.event-card');
+                        if(card) {
+                            card.addEventListener('mouseenter', function() { this.querySelector('a').style.bottom = '20px'; this.querySelector('a').style.opacity = '1'; });
+                            card.addEventListener('mouseleave', function() { this.querySelector('a').style.bottom = '-50px'; this.querySelector('a').style.opacity = '0'; });
+                        }
+                    })();
+                </script>
+            </div>
+
+            <!-- Event 2: Panel Discussion -->
+            <div class="card event-card" style="position: relative; overflow: hidden; min-height: 280px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; cursor: pointer;" data-aos="fade-up" data-aos-delay="100">
+                <div style="position: relative; z-index: 1;">
+                    <i class="fas fa-users" style="font-size: 3rem; color: #2ECC9C; margin-bottom: 15px; display: block;"></i>
+                    <h3 style="font-size: 1.3rem; color: white; margin-bottom: 10px;">Panel Discussion</h3>
+                </div>
+                <div class="event-popup">
+                    <strong>India's Net-Zero Path</strong><br>Regulatory, tech & economic views
+                </div>
+                <a href="register.html" style="position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); opacity: 0; transition: all 0.3s ease; white-space: nowrap; padding: 10px 20px; background: #2ECC9C; color: white; border-radius: 50px; font-weight: 600; z-index: 10;" onclick="event.stopPropagation();">Register Now</a>
+            </div>
+
+            <!-- Event 3: Lab Tours -->
+            <div class="card event-card" style="position: relative; overflow: hidden; min-height: 280px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; cursor: pointer;" data-aos="fade-up" data-aos-delay="200">
+                <div style="position: relative; z-index: 1;">
+                    <i class="fas fa-flask" style="font-size: 3rem; color: #2ECC9C; margin-bottom: 15px; display: block;"></i>
+                    <h3 style="font-size: 1.3rem; color: white; margin-bottom: 10px;">Interactive Lab Tours</h3>
+                </div>
+                <div class="event-popup">
+                    <strong>Hands-on Research</strong><br>DESE labs & cutting-edge tech
+                </div>
+                <a href="register.html" style="position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); opacity: 0; transition: all 0.3s ease; white-space: nowrap; padding: 10px 20px; background: #2ECC9C; color: white; border-radius: 50px; font-weight: 600; z-index: 10;" onclick="event.stopPropagation();">Register Now</a>
+            </div>
+
+            <!-- Event 4: Networking -->
+            <div class="card event-card" style="position: relative; overflow: hidden; min-height: 280px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; cursor: pointer;" data-aos="fade-up" data-aos-delay="300">
+                <div style="position: relative; z-index: 1;">
+                    <i class="fas fa-handshake" style="font-size: 3rem; color: #2ECC9C; margin-bottom: 15px; display: block;"></i>
+                    <h3 style="font-size: 1.3rem; color: white; margin-bottom: 10px;">Networking Fair</h3>
+                </div>
+                <div class="event-popup">
+                    <strong>Career Opportunities</strong><br>Connect with industry leaders
+                </div>
+                <a href="register.html" style="position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); opacity: 0; transition: all 0.3s ease; white-space: nowrap; padding: 10px 20px; background: #2ECC9C; color: white; border-radius: 50px; font-weight: 600; z-index: 10;" onclick="event.stopPropagation();">Register Now</a>
+            </div>
+
+            <!-- Event 5: Student Presentations -->
+            <div class="card event-card" style="position: relative; overflow: hidden; min-height: 280px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; cursor: pointer;" data-aos="fade-up" data-aos-delay="400">
+                <div style="position: relative; z-index: 1;">
+                    <i class="fas fa-presentation" style="font-size: 3rem; color: #2ECC9C; margin-bottom: 15px; display: block;"></i>
+                    <h3 style="font-size: 1.3rem; color: white; margin-bottom: 10px;">Student Presentations</h3>
+                </div>
+                <div class="event-popup">
+                    <strong>Research Showcase</strong><br>Innovation from IIT Bombay
+                </div>
+                <a href="register.html" style="position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); opacity: 0; transition: all 0.3s ease; white-space: nowrap; padding: 10px 20px; background: #2ECC9C; color: white; border-radius: 50px; font-weight: 600; z-index: 10;" onclick="event.stopPropagation();">Register Now</a>
+            </div>
+
+            <!-- Event 6: Workshops -->
+            <div class="card event-card" style="position: relative; overflow: hidden; min-height: 280px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; cursor: pointer;" data-aos="fade-up" data-aos-delay="500">
+                <div style="position: relative; z-index: 1;">
+                    <i class="fas fa-tools" style="font-size: 3rem; color: #2ECC9C; margin-bottom: 15px; display: block;"></i>
+                    <h3 style="font-size: 1.3rem; color: white; margin-bottom: 10px;">Technical Workshops</h3>
+                </div>
+                <div class="event-popup">
+                    <strong>Skill Development</strong><br>Learn from industry experts
+                </div>
+                <a href="register.html" style="position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%); opacity: 0; transition: all 0.3s ease; white-space: nowrap; padding: 10px 20px; background: #2ECC9C; color: white; border-radius: 50px; font-weight: 600; z-index: 10;" onclick="event.stopPropagation();">Register Now</a>
+            </div>
+        </div>
+
+        <!-- Brochure Download -->
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="#" style="padding: 12px 28px; background: var(--gradient-green); color: white; border-radius: 50px; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 6px 20px rgba(46, 204, 156, 0.25); transition: all 0.3s ease;">
+                <i class="fas fa-file-download"></i> Download Event Brochure
+            </a>
+        </div>
+    </section>
+
+    <!-- COMPLETE SCHEDULE (Energise India Format) -->
+    <section style="background: var(--card-bg);">
+        <h2 class="section-title">Complete Schedule</h2>
+        
+        <div style="max-width: 950px; margin: 0 auto;">
+            <!-- Day 1 -->
+            <h3 style="color: #2ECC9C; margin-bottom: 35px; text-align: center; font-size: 1.5rem; font-weight: 700;">📅 Day 1: Friday, April 4, 2026</h3>
+            
+            <div style="border-left: 3px solid #2ECC9C; padding-left: 35px; margin-bottom: 70px;">
+                
+                <div style="margin-bottom: 45px; position: relative;" data-aos="fade-left">
+                    <span style="position: absolute; left: -42px; top: 5px; width: 18px; height: 18px; background: #2ECC9C; border-radius: 50%; box-shadow: 0 0 0 4px rgba(46, 204, 156, 0.2);"></span>
+                    <div style="color: #4A90E2; font-weight: 700; font-size: 1.05rem;">9:00 AM - 9:30 AM</div>
+                    <h4 style="font-size: 1.15rem; color: #F5F7FA; margin-top: 8px;">Registration & Welcome Coffee</h4>
+                    <p style="color: #8B95A5; font-size: 0.95rem; margin-top: 5px;">Main Entrance, Research Park</p>
+                </div>
+
+                <div style="margin-bottom: 45px; position: relative;" data-aos="fade-left" data-aos-delay="50">
+                    <span style="position: absolute; left: -42px; top: 5px; width: 18px; height: 18px; background: #2ECC9C; border-radius: 50%; box-shadow: 0 0 0 4px rgba(46, 204, 156, 0.2);"></span>
+                    <div style="color: #4A90E2; font-weight: 700; font-size: 1.05rem;">10:00 AM - 11:30 AM</div>
+                    <h4 style="font-size: 1.15rem; color: #F5F7FA; margin-top: 8px;">Keynote Session</h4>
+                    <p style="color: #8B95A5; font-size: 0.95rem; margin-top: 5px;">Main Convention Centre</p>
+                </div>
+
+                <div style="margin-bottom: 45px; position: relative;" data-aos="fade-left" data-aos-delay="100">
+                    <span style="position: absolute; left: -42px; top: 5px; width: 18px; height: 18px; background: #2ECC9C; border-radius: 50%; box-shadow: 0 0 0 4px rgba(46, 204, 156, 0.2);"></span>
+                    <div style="color: #4A90E2; font-weight: 700; font-size: 1.05rem;">11:30 AM - 1:00 PM</div>
+                    <h4 style="font-size: 1.15rem; color: #F5F7FA; margin-top: 8px;">Lunch Break</h4>
+                    <p style="color: #8B95A5; font-size: 0.95rem; margin-top: 5px;">Dining Hall, IIT Bombay</p>
+                </div>
+
+                <div style="margin-bottom: 45px; position: relative;" data-aos="fade-left" data-aos-delay="150">
+                    <span style="position: absolute; left: -42px; top: 5px; width: 18px; height: 18px; background: #2ECC9C; border-radius: 50%; box-shadow: 0 0 0 4px rgba(46, 204, 156, 0.2);"></span>
+                    <div style="color: #4A90E2; font-weight: 700; font-size: 1.05rem;">2:00 PM - 3:30 PM</div>
+                    <h4 style="font-size: 1.15rem; color: #F5F7FA; margin-top: 8px;">Panel Discussion</h4>
+                    <p style="color: #8B95A5; font-size: 0.95rem; margin-top: 5px;">Seminar Hall A</p>
+                </div>
+
+                <div style="margin-bottom: 45px; position: relative;" data-aos="fade-left" data-aos-delay="200">
+                    <span style="position: absolute; left: -42px; top: 5px; width: 18px; height: 18px; background: #2ECC9C; border-radius: 50%; box-shadow: 0 0 0 4px rgba(46, 204, 156, 0.2);"></span>
+                    <div style="color: #4A90E2; font-weight: 700; font-size: 1.05rem;">4:00 PM - 6:00 PM</div>
+                    <h4 style="font-size: 1.15rem; color: #F5F7FA; margin-top: 8px;">Networking & Career Fair</h4>
+                    <p style="color: #8B95A5; font-size: 0.95rem; margin-top: 5px;">Central Atrium</p>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <h3 style="color: #2ECC9C; margin-bottom: 35px; text-align: center; font-size: 1.5rem; font-weight: 700;">📅 Day 2: Saturday, April 5, 2026</h3>
+            
+            <div style="border-left: 3px solid #2ECC9C; padding-left: 35px;">
+                
+                <div style="margin-bottom: 45px; position: relative;" data-aos="fade-left">
+                    <span style="position: absolute; left: -42px; top: 5px; width: 18px; height: 18px; background: #2ECC9C; border-radius: 50%; box-shadow: 0 0 0 4px rgba(46, 204, 156, 0.2);"></span>
+                    <div style="color: #4A90E2; font-weight: 700; font-size: 1.05rem;">9:00 AM - 12:00 PM</div>
+                    <h4 style="font-size: 1.15rem; color: #F5F7FA; margin-top: 8px;">Interactive Lab Tours</h4>
+                    <p style="color: #8B95A5; font-size: 0.95rem; margin-top: 5px;">DESE Research Laboratories (Multiple batches)</p>
+                </div>
+
+                <div style="margin-bottom: 45px; position: relative;" data-aos="fade-left" data-aos-delay="50">
+                    <span style="position: absolute; left: -42px; top: 5px; width: 18px; height: 18px; background: #2ECC9C; border-radius: 50%; box-shadow: 0 0 0 4px rgba(46, 204, 156, 0.2);"></span>
+                    <div style="color: #4A90E2; font-weight: 700; font-size: 1.05rem;">1:00 PM - 2:00 PM</div>
+                    <h4 style="font-size: 1.15rem; color: #F5F7FA; margin-top: 8px;">Lunch Break</h4>
+                    <p style="color: #8B95A5; font-size: 0.95rem; margin-top: 5px;">Dining Hall, IIT Bombay</p>
+                </div>
+
+                <div style="margin-bottom: 45px; position: relative;" data-aos="fade-left" data-aos-delay="100">
+                    <span style="position: absolute; left: -42px; top: 5px; width: 18px; height: 18px; background: #2ECC9C; border-radius: 50%; box-shadow: 0 0 0 4px rgba(46, 204, 156, 0.2);"></span>
+                    <div style="color: #4A90E2; font-weight: 700; font-size: 1.05rem;">2:00 PM - 4:00 PM</div>
+                    <h4 style="font-size: 1.15rem; color: #F5F7FA; margin-top: 8px;">Student Presentations & Workshops</h4>
+                    <p style="color: #8B95A5; font-size: 0.95rem; margin-top: 5px;">Multiple Venues</p>
+                </div>
+
+                <div style="margin-bottom: 45px; position: relative;" data-aos="fade-left" data-aos-delay="150">
+                    <span style="position: absolute; left: -42px; top: 5px; width: 18px; height: 18px; background: #2ECC9C; border-radius: 50%; box-shadow: 0 0 0 4px rgba(46, 204, 156, 0.2);"></span>
+                    <div style="color: #4A90E2; font-weight: 700; font-size: 1.05rem;">4:00 PM - 6:00 PM</div>
+                    <h4 style="font-size: 1.15rem; color: #F5F7FA; margin-top: 8px;">Networking Fair (Continued)</h4>
+                    <p style="color: #8B95A5; font-size: 0.95rem; margin-top: 5px;">Central Atrium</p>
+                </div>
+
+                <div style="position: relative;" data-aos="fade-left" data-aos-delay="200">
+                    <span style="position: absolute; left: -42px; top: 5px; width: 18px; height: 18px; background: #2ECC9C; border-radius: 50%; box-shadow: 0 0 0 4px rgba(46, 204, 156, 0.2);"></span>
+                    <div style="color: #4A90E2; font-weight: 700; font-size: 1.05rem;">6:30 PM Onwards</div>
+                    <h4 style="font-size: 1.15rem; color: #F5F7FA; margin-top: 8px;">Closing Ceremony & Gala Dinner</h4>
+                    <p style="color: #8B95A5; font-size: 0.95rem; margin-top: 5px;">Main Convention Centre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Reach Us</h3>
+        <p>DESE Office, IIT Bombay, Powai, Mumbai - 400076</p>
+        <p>Email: <a href="mailto:energyday@iitb.ac.in" style="color: #2ECC9C; text-decoration: none;">energyday@iitb.ac.in</a></p>
+        <div style="margin-top: 25px; font-size: 1.8rem; display: flex; justify-content: center; gap: 20px;">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.9rem; border-top: 1px solid rgba(46, 204, 156, 0.1); padding-top: 20px;">© 2026 Energy Day, IIT Bombay. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Event card hover interactions
+        document.querySelectorAll('.event-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                const link = this.querySelector('a');
+                if(link) link.style.pointerEvents = 'auto';
+            });
+            card.addEventListener('mouseleave', function() {
+                const link = this.querySelector('a');
+                if(link) link.style.pointerEvents = 'none';
+            });
+        });
+
+        AOS.init({
+            duration: 800,
+            once: false
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

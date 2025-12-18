@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Day | Highlights 2025</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Page Specific Styles for Timeline */
+        .timeline-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 50px auto 100px;
+            padding: 0 20px;
+        }
+
+        /* The vertical line */
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: var(--green-primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(46, 204, 156, 0.5);
+        }
+
+        .timeline-box {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        /* Circles on the line */
+        .timeline-box::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: #0A1428;
+            border: 4px solid var(--green-primary);
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 10px var(--green-primary);
+        }
+
+        .left { left: 0; }
+        .right { left: 50%; }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 28px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #1B2845;
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 28px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #1B2845 transparent transparent;
+        }
+
+        .right::after { left: -10px; }
+
+        .content {
+            padding: 25px 30px;
+            background-color: #1B2845;
+            position: relative;
+            border-radius: 12px;
+            border: 1px solid rgba(46, 204, 156, 0.15);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .content:hover { transform: translateY(-5px); }
+
+        .timeline-date {
+            color: var(--accent-blue);
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .timeline-title {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+
+        .timeline-desc {
+            color: #8B95A5;
+            line-height: 1.6;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .timeline-container::after { left: 31px; }
+            .timeline-box { width: 100%; padding-left: 70px; padding-right: 25px; }
+            .timeline-box::before { left: 60px; border: medium solid white; border-width: 10px 10px 10px 0; border-color: transparent #1B2845 transparent transparent; }
+            .left::after, .right::after { left: 21px; }
+            .right { left: 0%; }
+            .left { left: 0%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="logo">ENERGY DAY '26</div>
+        <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="competitions.html">Competitions</a></li>
+            <li class="dropdown">
+                <a href="#" class="active">Past Highlights ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="highlights-2025.html" class="active">2025</a></li>
+                    <li><a href="highlights-2024.html">2024</a></li>
+                </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="register.html" class="btn">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header style="height: 50vh; background: linear-gradient(135deg, #0A1428, #112240); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <h1 data-aos="fade-down" style="font-size: 3rem; margin-bottom: 10px; color: #fff;">Highlights 2025</h1>
+        <p data-aos="fade-up" style="color: var(--green-soft); max-width: 600px; padding: 0 20px;">A timeline of innovation, collaboration, and breakthroughs from our last edition.</p>
+    </header>
+
+    <!-- TIMELINE SECTION -->
+    <section>
+        <div class="timeline-container">
+            
+            <!-- Item 1 -->
+            <div class="timeline-box left" data-aos="fade-right">
+                <div class="content">
+                    <span class="timeline-date">June 10, 2025</span>
+                    <h3 class="timeline-title">Opening Address</h3>
+                    <p class="timeline-desc">The programme opened with a rapid-fire set of lightning talks showcasing applied research and community projects, setting the stage for a weekend of innovation.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="timeline-box right" data-aos="fade-left">
+                <div class="content">
+                    <span class="timeline-date">June 10, 2025 - 2:00 PM</span>
+                    <h3 class="timeline-title">Deep-Dive Workshops</h3>
+                    <p class="timeline-desc">Hands-on deep-dive sessions focusing on energy analytics, storage modelling, and distributed sensing. Over 200 participants engaged in real-time data analysis.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="timeline-box left" data-aos="fade-right">
+                <div class="content">
+                    <span class="timeline-date">June 11, 2025</span>
+                    <h3 class="timeline-title">Student Projects Showcase</h3>
+                    <p class="timeline-desc">Student teams presented prototypes for low-cost monitoring and demand-response pilot schemes. The winning team demonstrated a novel EV charging optimization algorithm.</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="timeline-box right" data-aos="fade-left">
+                <div class="content">
+                    <span class="timeline-date">June 11, 2025 - 5:00 PM</span>
+                    <h3 class="timeline-title">Panel Discussion: Green Hydrogen</h3>
+                    <p class="timeline-desc">Industry experts debated the scalability of Green Hydrogen in the Indian context, providing insights into future job markets and research opportunities.</p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="timeline-box left" data-aos="fade-right">
+                <div class="content">
+                    <span class="timeline-date">June 12, 2025</span>
+                    <h3 class="timeline-title">Closing & Awards Night</h3>
+                    <p class="timeline-desc">A community evening celebrating projects and announcing follow-up pilot grants. Networking dinner allowed students to connect with top recruiters.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALLERY SNEAK PEEK -->
+    <section style="background: var(--card-bg); padding: 60px 0; text-align: center;">
+        <h2 class="section-title">Captured Moments</h2>
+        <div class="grid-container" style="max-width: 1000px; margin: 0 auto 30px; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+            <div style="height: 200px; background: #334155; border-radius: 8px;"></div>
+            <div style="height: 200px; background: #334155; border-radius: 8px;"></div>
+            <div style="height: 200px; background: #334155; border-radius: 8px;"></div>
+        </div>
+        <p style="color: #8B95A5;">Check out the full album on our social media handles.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Reach Us</h3>
+        <p>DESE Office, IIT Bombay, Powai, Mumbai - 400076</p>
+        <p>Email: <a href="mailto:energyday@iitb.ac.in" style="color: #2ECC9C; text-decoration: none;">energyday@iitb.ac.in</a></p>
+        <div style="margin-top: 25px; font-size: 1.8rem; display: flex; justify-content: center; gap: 20px;">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.9rem; border-top: 1px solid rgba(46, 204, 156, 0.1); padding-top: 20px;">© 2026 Energy Day, IIT Bombay. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
